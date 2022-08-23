@@ -1,4 +1,4 @@
-﻿apiVersion: apps/v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: auditchecklistmodule-deployment
@@ -13,8 +13,8 @@ spec:
         app: AuditChecklistModule
     spec:
       containers:
-      - name: dockersamplerepos
-        image: 3acr.azurecr.io/dockersamplerepos:latest
+      - name: amschecklistservicerepo
+        image: amschecklistservicescr.azurecr.io/amschecklistservicerepo:latest
         ports:
         - containerPort: 8080
       imagePullSecrets:
